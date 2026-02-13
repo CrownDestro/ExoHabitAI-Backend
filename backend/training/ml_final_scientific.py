@@ -716,10 +716,12 @@ def main():
             final_model, X, y, groups, df_clean, model_name, eval_metrics, excluded_features
         )
         
-        # Save final model
+        # Save final model with pickle protocol 4 for compatibility
         model_file = MODEL_DIR / 'final_model_scientific.pkl'
-        joblib.dump(final_model, model_file)
-        print(f"\n✓ Saved: {model_file}")
+        import pickle
+        with open(model_file, 'wb') as f:
+            pickle.dump(final_model, f, protocol=4)
+        print(f"\n✓ Saved: {model_file} (pickle protocol 4)")
         
         # Execution summary
         end_time = datetime.now()

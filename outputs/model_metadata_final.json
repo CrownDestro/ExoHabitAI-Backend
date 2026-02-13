@@ -1,0 +1,110 @@
+{
+  "model_name": "Logistic Regression",
+  "version": "3.0_scientific_final",
+  "timestamp": "2026-02-13 10:40:10",
+  "dataset": {
+    "total_planets": 4027,
+    "total_features": 15,
+    "features_used": [
+      "pl_orbper",
+      "pl_orbsmax",
+      "pl_bmasse",
+      "st_met",
+      "st_logg",
+      "disc_year",
+      "st_type_category_F",
+      "st_type_category_G",
+      "st_type_category_K",
+      "st_type_category_M",
+      "st_type_category_Other",
+      "pl_type_category_jupiter",
+      "pl_type_category_neptune",
+      "pl_type_category_rocky",
+      "pl_type_category_super_earth"
+    ],
+    "features_excluded": [
+      "pl_insol",
+      "pl_eqt",
+      "pl_rade",
+      "pl_orbeccen",
+      "st_teff",
+      "st_rad",
+      "st_mass",
+      "pl_density",
+      "tidal_heating_indicator",
+      "flux_variation",
+      "escape_velocity_factor",
+      "habitability_score_index",
+      "stellar_compatibility_index",
+      "hz_conservative",
+      "hz_optimistic",
+      "pl_name",
+      "habitable_candidate",
+      "star_system"
+    ],
+    "habitable_count": 27,
+    "habitable_percentage": 0.6704742984852247
+  },
+  "performance": {
+    "confusion_matrix": [
+      [
+        789,
+        0
+      ],
+      [
+        7,
+        0
+      ]
+    ],
+    "accuracy": 0.9912060301507538,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "roc_auc": 0.9851529965598407,
+    "average_precision": 0.46728271728271725,
+    "recall_at_10": 0.8571428571428571,
+    "precision_at_10": 0.12
+  },
+  "top_features": [
+    {
+      "feature": "pl_orbper",
+      "importance": 1.0
+    },
+    {
+      "feature": "pl_orbsmax",
+      "importance": 1.0
+    },
+    {
+      "feature": "pl_bmasse",
+      "importance": 1.0
+    },
+    {
+      "feature": "st_met",
+      "importance": 1.0
+    },
+    {
+      "feature": "st_logg",
+      "importance": 1.0
+    },
+    {
+      "feature": "disc_year",
+      "importance": 1.0
+    },
+    {
+      "feature": "st_type_category_F",
+      "importance": 1.0
+    },
+    {
+      "feature": "st_type_category_G",
+      "importance": 1.0
+    },
+    {
+      "feature": "st_type_category_K",
+      "importance": 1.0
+    },
+    {
+      "feature": "st_type_category_M",
+      "importance": 1.0
+    }
+  ]
+}
