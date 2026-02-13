@@ -48,15 +48,15 @@ htmlcov/
 logs/
 
 # Data (optional - uncomment if datasets are large)
-data/raw/*
+# data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
-# Models (optional - uncomment if model is too large for GitHub)
-models/*.pkl
-models/*.joblib
-models/*.h5
+# # Models (optional - uncomment if model is too large for GitHub)
+# models/*.pkl
+# models/*.joblib
+# models/*.h5
 
 # Temporary files
 *.tmp
