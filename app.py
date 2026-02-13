@@ -7,7 +7,7 @@ from pathlib import Path
 project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
-from backend.utils import (
+from utils import (
     validate_input, 
     prepare_features, 
     format_prediction_response,
